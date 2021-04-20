@@ -177,3 +177,17 @@ bundle exec annotate --models
 validaciones del modelo para su insert en la base de datos 
 https://api.rubyonrails.org/classes/ActiveRecord/Validations/ClassMethods.html
 
+--- 
+Gema para usuarios
+gem 'devise' > gemfile
+bundle install
+rails g devise:install
+rails g devise User
+* para ver todas las rutas -> rails routes o http://localhost:3000/rails/info/routes
+http://localhost:3000/users/sign_in
+
+se agrega a ApplicationController 
+    before_action :authenticate_user!
+y se agrega al application html 
+    <%= link_to 'cerrar sesion', destroy_user_session_path, method: :delete %>
+
