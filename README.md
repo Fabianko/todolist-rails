@@ -138,3 +138,11 @@ Se utiliza i18n que se encuentra en config/local/es.yml
 se puede mejorar con una gema llamada i18n-tasks, se utiliza label: t('.value')
 gem install i18n-tasks
 i18n-tasks add-missing
+
+---
+byebug se coloca en los controladores para debug
+sirve como debugger pero de lado del servidor
+existen otras gemas como pry se agregan al gemfile y se utiliza colocando binding.pry
+
+
+
