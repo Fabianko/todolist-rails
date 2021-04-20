@@ -112,3 +112,11 @@ sass -> css1 -> manifest suma (css) -> 1 archivo css-> asignar id unico css
 ---
 Scaffolding
 rails g scaffold Book title:string author:string description:text isbn:string pages_count:integer
+rails db:migrate
+
+---
+Probando HAML https://haml.info/
+> "puede generar problemas de rendimiento"
+se edita gemfile y se agrega gem 'hamlit'
+y en group :development do agregar gem 'hamlit-rails'
+bundle install

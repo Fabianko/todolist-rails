@@ -71,6 +71,15 @@ GEM
     ffi (1.15.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hamlit (2.15.0)
+      temple (>= 0.8.2)
+      thor
+      tilt
+    hamlit-rails (0.2.3)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      hamlit (>= 1.2.0)
+      railties (>= 4.0.1)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -86,9 +95,13 @@ GEM
     marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.0.3)
+    mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
+    nokogiri (1.11.3)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     nokogiri (1.11.3-x86_64-linux)
       racc (~> 1.4)
     puma (5.2.2)
@@ -151,6 +164,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    temple (0.8.2)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -180,6 +194,8 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
+  hamlit
+  hamlit-rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)
