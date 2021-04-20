@@ -103,3 +103,12 @@ credenciales en rails
 EDITOR=nano rails credentials:edit
 ...
 para acceder a la variable Rails.application.credentials.VALOR
+
+--- 
+El asset pipeline
+Transformer -> Concatenator-> Compressor -> Fingerprinter
+sass -> css1 -> manifest suma (css) -> 1 archivo css-> asignar id unico css
+
+---
+Scaffolding
+rails g scaffold Book title:string author:string description:text isbn:string pages_count:integer
