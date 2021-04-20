@@ -120,3 +120,16 @@ Probando HAML https://haml.info/
 se edita gemfile y se agrega gem 'hamlit'
 y en group :development do agregar gem 'hamlit-rails'
 bundle install
+
+https://html2haml.herokuapp.com/
+
+---
+simple form gem https://github.com/heartcombo/simple_form
+se agrega en la rails del Gemfile gem 'simple_form'
+bundle install o bi
+rails generate simple_form:install
+Para probar
+rails g scaffold User first_name:string last_name:string address:string about_me:text phone:integer
+rails db:migrate
+
+---
