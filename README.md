@@ -172,3 +172,8 @@ rails db:migrate
 Para ver los datos dentro de un modelo se utiliza la gema annotate
 al gemfile > gem 'annotate'
 bundle exec annotate --models
+
+---
+validaciones del modelo para su insert en la base de datos 
+https://api.rubyonrails.org/classes/ActiveRecord/Validations/ClassMethods.html
+
