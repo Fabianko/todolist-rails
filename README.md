@@ -2,7 +2,7 @@
 Create a todolist with Ruby on Rails
 
 
-
+Basado en curso de Platzi
 
 # manual install rails in linux
 
@@ -60,7 +60,7 @@ sudo apt update
 
 sudo apt --no-install-recommends install yarn
 
-postgresql
+#postgresql
 
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
@@ -70,11 +70,31 @@ sudo apt update
 
 sudo apt -y install postgresql-12 postgresql-client-12
 
-createuser --pwprompt --interactive nombre_usuario
+
+sudo -i -u postgres
+
+createuser --pwprompt --interactive todolist
 
 
+Crear aplicacion de ejemplo con postgresql
+rails new *nombre_del_proyecto* -T -d postgresql
 
 
+Crear aplicacion  de ejemplo con sqlite
+
+sudo apt-get install -y sqlite3 libsqlite3-dev
+rails new *nombre_del_proyecto* -T
 
 
+rails server
+
+---
+crear modelos
+rails g model Pet name:string breed:string
+rails db:migrate
+
+---
+para crear registros
+rails console
+Pet.create name: 'Pandy', breed: 'koker'
 
