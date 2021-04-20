@@ -144,5 +144,10 @@ byebug se coloca en los controladores para debug
 sirve como debugger pero de lado del servidor
 existen otras gemas como pry se agregan al gemfile y se utiliza colocando binding.pry
 
-
-
+---
+Creando proyecto principal
+rails new organizador -T --database=postgresql  
+rails new organizador -T -d postgresql
+yarn add bootstrap jquery popper.js roboto-fontface
+se modifica gemfile y se agregan gemas anteriores
+bundle install
