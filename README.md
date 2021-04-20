@@ -191,3 +191,10 @@ se agrega a ApplicationController
 y se agrega al application html 
     <%= link_to 'cerrar sesion', destroy_user_session_path, method: :delete %>
 
+---
+Asignar tarea a un usuario
+rails g migration AddOwnerToTask user:references
+luego en db migrate
+se cambia :user por :owner y se cambia foreign_key: { to_table: :users }, index: true al final
+y se modifican las relaciones de los modelos internamente
+
