@@ -133,3 +133,8 @@ rails g scaffold User first_name:string last_name:string address:string about_me
 rails db:migrate
 
 ---
+Traducciones
+Se utiliza i18n que se encuentra en config/local/es.yml
+se puede mejorar con una gema llamada i18n-tasks, se utiliza label: t('.value')
+gem install i18n-tasks
+i18n-tasks add-missing
