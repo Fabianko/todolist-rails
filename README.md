@@ -196,5 +196,10 @@ Asignar tarea a un usuario
 rails g migration AddOwnerToTask user:references
 luego en db migrate
 se cambia :user por :owner y se cambia foreign_key: { to_table: :users }, index: true al final
-y se modifican las relaciones de los modelos internamente
+y se modifican las relaciones de los modelos internamente entre task y users
+Luego se debe modificar tasks controller en la tarea create
+    @task.owner = current_user
 
+rails g model Participant role:integer user:references task:references
+
+Luego se modifica model/user  y model/tasks
