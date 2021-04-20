@@ -140,6 +140,7 @@ gem install i18n-tasks
 i18n-tasks add-missing
 
 ---
+
 byebug se coloca en los controladores para debug
 sirve como debugger pero de lado del servidor
 existen otras gemas como pry se agregan al gemfile y se utiliza colocando binding.pry
@@ -151,3 +152,23 @@ rails new organizador -T -d postgresql
 yarn add bootstrap jquery popper.js roboto-fontface
 se modifica gemfile y se agregan gemas anteriores
 bundle install
+
+---
+configurar base de datos postgresql con archivo database.yml
+en dev y test se agrega 
+  host: localhost
+  user: todolist
+  password: todolist
+
+rails db:create
+
+---
+rails g simple_form:install --bootstrap
+rails g scaffold Category name:string description:text
+rails g scaffold Task name:string description:text due_date:date category:references
+rails db:create
+rails db:migrate
+
+Para ver los datos dentro de un modelo se utiliza la gema annotate
+al gemfile > gem 'annotate'
+bundle exec annotate --models
