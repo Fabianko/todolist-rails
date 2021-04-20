@@ -98,3 +98,8 @@ para crear registros
 rails console
 Pet.create name: 'Pandy', breed: 'koker'
 
+--- 
+credenciales en rails
+EDITOR=nano rails credentials:edit
+...
+para acceder a la variable Rails.application.credentials.VALOR
