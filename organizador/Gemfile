@@ -28,6 +28,8 @@ gem 'simple_form'
 gem 'annotate'
 
 gem 'devise'
+
+gem 'cocoon'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

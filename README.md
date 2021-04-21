@@ -203,3 +203,10 @@ Luego se debe modificar tasks controller en la tarea create
 rails g model Participant role:integer user:references task:references
 
 Luego se modifica model/user  y model/tasks
+rails db:migrate
+
+---
+formularios anidados (cocoon)
+gemfile > gem 'cocoon'
+yarn add 'github:nathanvda/cocoon#c24ba53'
+yarn add github:nathanvda/cocoon#c24ba53
