@@ -210,3 +210,12 @@ formularios anidados (cocoon)
 gemfile > gem 'cocoon'
 yarn add 'github:nathanvda/cocoon#c24ba53'
 yarn add github:nathanvda/cocoon#c24ba53
+---
+Se agrega cancancan al proyecto
+gemfile > gem 'cancancan'
+bundle install
+rails g cancan:ability
+
+---
+Eliminar todas las tareas de la bd
+rails db:reset
