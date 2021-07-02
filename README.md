@@ -10,7 +10,7 @@ sudo apt-get update
 
 sudo apt install build-essential curl wget openssl libssl-dev libreadline-dev dirmngr zlib1g-dev libmagickwand-dev imagemagick-6.q16 libffi-dev libpq-dev cmake libwebp-dev
 
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
 
 Al final de la ejecución del comando deberás ver un texto similar a este, mencionando que a pesar de haber instalado RBENV este no se encuentra en la variable de entorno PATH
 
